@@ -1,5 +1,5 @@
 Arguments: 
-  /home/bec/.nvm/versions/node/v10.3.0/bin/node /home/bec/.nvm/versions/node/v10.3.0/bin/yarn test
+  /home/bec/.nvm/versions/node/v10.3.0/bin/node /home/bec/.nvm/versions/node/v10.3.0/bin/yarn jest
 
 PATH: 
   /home/bec/.nvm/versions/node/v10.3.0/bin:/home/bec/bin:/home/bec/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/bec/Documents/Code/phase-zero/pixels/package.json: Unexpected token } in JSON at position 236
+  SyntaxError: /home/bec/Documents/Code/phase-zero/pixels/package.json: Unexpected token } in JSON at position 159
       at JSON.parse (<anonymous>)
       at /home/bec/.nvm/versions/node/v10.3.0/lib/node_modules/yarn/lib/cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -25,16 +25,12 @@ npm manifest:
   {
     "name": "pixels",
     "version": "1.0.0",
-    "main": "pixels.js",
-    "scripts": {
-      "start": "node pixels",
-      "test": "jest --watchAll"
-    },
+    "main": "index.js",
     "license": "MIT",
     "dependencies": {
       "express": "^4.16.3",
-      "jest": "^23.1.0",
-    }
+      "jest": "^23.1.0"
+    },
   }
 
 yarn manifest: 
