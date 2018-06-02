@@ -1,5 +1,5 @@
 const pixels = require('../pixels')
 
-test('checkt that test suite is working', function (){
+test('check that test suite is working', function (){
   expect(true).toBeTruthy();
 })
