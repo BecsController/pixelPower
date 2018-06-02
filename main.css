@@ -9,3 +9,33 @@
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }
+
+#canvas {
+  background-color: grey;
+  width: 1000px;
+  height: 800px;
+  border: black 1px solid;
+  margin: 10px auto;
+}
+
+tr, td {
+  border: .5px black solid;
+  background-color: white;
+}
+
+table {
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+
+.outline {
+  background-color: #000;
+}
