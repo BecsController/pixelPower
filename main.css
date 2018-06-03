@@ -9,33 +9,44 @@
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }
-
-#canvas {
-  background-color: grey;
-  width: 1000px;
-  height: 800px;
-  border: black 1px solid;
-  margin: 10px auto;
+body{
+  font-family: 'BioRhyme';
 }
-
-tr, td {
-  border: .5px black solid;
+h2 {
+  font-weight: 400;
+  margin: 15px auto;
+}
+#myCanvas {
+  display: inline;
+  width: 1200px;
+  height: 800px;
+  display: block;
+  margin: 10px auto;
   background-color: white;
 }
 
-table {
-  margin: 0 auto;
+#myCanvas tr {
+  border: 1px solid black;
 }
-
-tr {
-  height: 20px;
+#myCanvas td {
+  border: 1px solid black;
 }
-
-td {
-  width: 20px;
-}
-
 
 .outline {
-  background-color: #000;
+  background-color: black;
+}
+
+#palette{
+  padding-left: 50px;
+  padding-right: 0px;
+  float: left;
+  width: 300px;
+  height: 800px;
+  margin: 10px auto;
+  background-color: white;
+  display: inline;
+}
+
+#palette tr td {
+  border: 1px solid black;
 }
