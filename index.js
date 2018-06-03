@@ -26,9 +26,9 @@ let cells = document.getElementsByClassName("cell");
 for (var k = 0; k < cells.length; k++){
   cells[k].addEventListener("click", paint);
 }
-
+let currentColor = '';
 function paint (cell){
-  event.target.classList.add("outline")
+  event.target.classList.add(currentColor)
 }
 
 function createPalette(){
@@ -42,11 +42,27 @@ function createPalette(){
       paletteCell.width = '50px';
       paletteCell.height = '50px';
       paletteCell.setAttribute('id', 'p' + '#row'+ i +'col' + j)
+      paletteCell.addEventListener("click", changeColor);
       paletteRow.appendChild(paletteCell);
     }
     palette.appendChild(paletteRow);
   }
 }
+
+// let paletteCells = document.getElementsByClassName("paletteCell");
+//
+// for (var l = 0; l < paletteCells.length; l++){
+//   paletteCells[l].addEventListener("click", changeColor);
+// }
+
+function changeColor (){
+    alert(currentColor);
+    alert(this.classList)
+    let colorPicker = $(this).attr('class');
+    currentColor = colorPicker;
+    alert(currentColor);
+  };
+
 var paletteOne = document.getElementById("p#row0col0");
 var paletteTwo = document.getElementById("p#row0col1");
 var paletteThree = document.getElementById("p#row0col2");
