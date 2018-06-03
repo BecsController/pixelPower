@@ -33,8 +33,8 @@ function paint (cell){
 
 function createPalette(){
   let palette = document.getElementById("palette");
-  let sizey = 5;
-  let sizex = 4;
+  let sizey = 2;
+  let sizex = 10;
   for (var i = 0; i < sizex; i++){
     let paletteRow = document.createElement("tr");
     for (var j =0; j < sizey; j++){
@@ -42,8 +42,8 @@ function createPalette(){
       paletteCell.width = '50px';
       paletteCell.height = '50px';
       paletteCell.setAttribute('id', 'p' + '#row'+ i +'col' + j)
-      paletteCell.addEventListener("click", changeColor);
       paletteRow.appendChild(paletteCell);
+      paletteCell.addEventListener("click", changeColor);
     }
     palette.appendChild(paletteRow);
   }
@@ -56,33 +56,30 @@ function createPalette(){
 // }
 
 function changeColor (){
-    alert(currentColor);
-    alert(this.classList)
     let colorPicker = $(this).attr('class');
     currentColor = colorPicker;
-    alert(currentColor);
   };
 
 var paletteOne = document.getElementById("p#row0col0");
 var paletteTwo = document.getElementById("p#row0col1");
-var paletteThree = document.getElementById("p#row0col2");
-var paletteFour = document.getElementById("p#row0col3");
-var paletteFive = document.getElementById("p#row0col4");
-var paletteSix = document.getElementById("p#row1col0");
-var paletteSeven = document.getElementById("p#row1col1");
-var paletteEight = document.getElementById("p#row1col2");
-var paletteNine = document.getElementById("p#row1col3");
-var paletteTen = document.getElementById("p#row1col4");
-var paletteEleven = document.getElementById("p#row2col0");
-var paletteTwelve = document.getElementById("p#row2col1");
-var paletteThirteen = document.getElementById("p#row2col2");
-var paletteFourteen = document.getElementById("p#row2col3");
-var paletteFifteen = document.getElementById("p#row2col4");
-var paletteSixteen = document.getElementById("p#row3col0");
-var paletteSeventeen = document.getElementById("p#row3col1");
-var paletteEighteen = document.getElementById("p#row3col2");
-var paletteNineteen = document.getElementById("p#row3col3");
-var paletteTwenty = document.getElementById("p#row3col4");
+var paletteThree = document.getElementById("p#row1col0");
+var paletteFour = document.getElementById("p#row1col1");
+var paletteFive = document.getElementById("p#row2col0");
+var paletteSix = document.getElementById("p#row2col1");
+var paletteSeven = document.getElementById("p#row3col0");
+var paletteEight = document.getElementById("p#row3col1");
+var paletteNine = document.getElementById("p#row4col0");
+var paletteTen = document.getElementById("p#row4col1");
+var paletteEleven = document.getElementById("p#row5col0");
+var paletteTwelve = document.getElementById("p#row5col1");
+var paletteThirteen = document.getElementById("p#row6col0");
+var paletteFourteen = document.getElementById("p#row6col1");
+var paletteFifteen = document.getElementById("p#row7col0");
+var paletteSixteen = document.getElementById("p#row7col1");
+var paletteSeventeen = document.getElementById("p#row8col0");
+var paletteEighteen = document.getElementById("p#row8col1");
+var paletteNineteen = document.getElementById("p#row9col0");
+var paletteTwenty = document.getElementById("p#row9col1");
 
 paletteOne.classList.add("red");
 paletteTwo.classList.add("redder");
